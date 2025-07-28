@@ -1,0 +1,21 @@
+{
+  "name": "exp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "^55.0.0-canary-20251009-9919e08",
+    "expo-status-bar": "3.0.9-canary-20251009-9919e08",
+    "react": "19.1.1",
+    "react-native": "0.82.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
