@@ -20,7 +20,8 @@ enum AppTab: Identifiable, Hashable, CaseIterable, Codable {
   case lists
   case links
   case anyTimelineFilter(filter: TimelineFilter)
-  
+  case reactNative
+
   nonisolated var id: Int {
     return switch self {
     case .timeline: 0
@@ -40,11 +41,12 @@ enum AppTab: Identifiable, Hashable, CaseIterable, Codable {
     case .followedTags: 14
     case .lists: 15
     case .links: 16
+    case .reactNative: 17
     case .anyTimelineFilter(let filter):
       filter.hashValue
     }
   }
-  
+
   nonisolated static var allCases: [AppTab] {
     [.timeline,
       .notifications,
@@ -64,7 +66,7 @@ enum AppTab: Identifiable, Hashable, CaseIterable, Codable {
       .lists,
       .links]
   }
-  
+
   init(with id: Int) {
     switch id {
     case 0:
@@ -107,7 +109,7 @@ enum AppTab: Identifiable, Hashable, CaseIterable, Codable {
   }
 
   static func loggedOutTab() -> [AppTab] {
-    [.timeline, .settings]
+    [.timeline, .reactNative, .settings]
   }
 
   static func visionOSTab() -> [AppTab] {
@@ -161,6 +163,8 @@ enum AppTab: Identifiable, Hashable, CaseIterable, Codable {
       }
     case .links:
       NavigationTab { TrendingLinksListView(cards: []) }
+    case .reactNative:
+      ReactNativeTab()
     case .post:
       VStack {}
     case .other:
@@ -220,6 +224,8 @@ enum AppTab: Identifiable, Hashable, CaseIterable, Codable {
       "timeline.filter.lists"
     case .links:
       "explore.section.trending.links"
+    case .reactNative:
+      "React Native"
     case .other:
       ""
     }
@@ -261,6 +267,8 @@ enum AppTab: Identifiable, Hashable, CaseIterable, Codable {
       "list.bullet"
     case .links:
       "newspaper"
+    case .reactNative:
+      "ladybug"
     case .other:
       ""
     }
@@ -269,20 +277,22 @@ enum AppTab: Identifiable, Hashable, CaseIterable, Codable {
 
 @MainActor
 enum SidebarSections: Int, Identifiable {
-  case timeline, activities, account, app, loggedOutTabs, iosTabs, visionOSTabs, lists, tags, localTimeline, tagGroup
-  
+  case timeline, activities, account, app, loggedOutTabs, iosTabs, visionOSTabs, lists, tags, localTimeline, tagGroup, reactNative
+
   nonisolated var id: Int {
     rawValue
   }
-  
+
   static var macOrIpadOSSections: [SidebarSections] {
-    [.timeline, .activities, .account, .lists, .tags]
+    [.timeline, .reactNative, .activities, .account, .lists, .tags]
   }
-  
+
   var title: String {
     switch self {
     case .timeline:
       "Timeline"
+    case .reactNative:
+      "React Native"
     case .activities:
       "Activities"
     case .account:
@@ -301,11 +311,13 @@ enum SidebarSections: Int, Identifiable {
       ""
     }
   }
-  
+
   var tabs: [AppTab] {
     switch self {
+    case .reactNative:
+      return [.reactNative]
     case .timeline:
-      return [.timeline, .trending, .local, .federated, .links, .explore]
+      return [.timeline, .reactNative, .trending, .local, .federated, .links, .explore]
     case .activities:
       return [.notifications, .mentions, .messages]
     case .account:
@@ -313,7 +325,7 @@ enum SidebarSections: Int, Identifiable {
     case .app:
       return [.settings]
     case .loggedOutTabs:
-      return [.timeline, .settings]
+      return [.timeline, .reactNative, .settings]
     case .iosTabs:
       return iOSTabs.shared.tabs
     case .visionOSTabs:

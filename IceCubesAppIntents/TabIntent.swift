@@ -2,7 +2,7 @@ import AppIntents
 import Foundation
 
 enum TabEnum: String, AppEnum, Sendable {
-  case timeline, notifications, mentions, explore, messages, settings
+  case timeline, notifications, mentions, explore, messages, settings, reactNative
   case trending, federated, local
   case profile
   case bookmarks
@@ -27,6 +27,7 @@ enum TabEnum: String, AppEnum, Sendable {
       .explore: .init(title: "Explore & Trending"),
       .messages: .init(title: "Private Messages"),
       .settings: .init(title: "Settings"),
+      .reactNative: .init(title: "React Native"),
       .profile: .init(title: "Profile"),
       .bookmarks: .init(title: "Bookmarks"),
       .favorites: .init(title: "Favorites"),
@@ -51,6 +52,8 @@ enum TabEnum: String, AppEnum, Sendable {
       .messages
     case .settings:
       .settings
+    case .reactNative:
+      .reactNative
     case .trending:
       .trending
     case .federated:
