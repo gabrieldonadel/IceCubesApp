@@ -93,7 +93,6 @@ IceCubesApp.xcconfig
 *.resolved
 buildServer.json
 
-
 node_modules/
 Pods/
 .xcode.env.local
