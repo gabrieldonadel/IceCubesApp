@@ -21,6 +21,8 @@
 	<array>
 		<string>INSendMessageIntent</string>
 	</array>
+	<key>RCTNewArchEnabled</key>
+	<true/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Atkinson-Hyperlegible-Regular-102.ttf</string>
