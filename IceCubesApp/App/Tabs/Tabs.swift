@@ -17,13 +17,14 @@ enum AppTab: Int, Identifiable, Hashable, CaseIterable, Codable {
   case followedTags
   case lists
   case links
+  case reactNative
 
   nonisolated var id: Int {
     rawValue
   }
 
   static func loggedOutTab() -> [AppTab] {
-    [.timeline, .settings]
+    [.timeline, .reactNative, .settings]
   }
 
   static func visionOSTab() -> [AppTab] {
@@ -71,6 +72,8 @@ enum AppTab: Int, Identifiable, Hashable, CaseIterable, Codable {
       }
     case .links:
       NavigationTab { TrendingLinksListView(cards: []) }
+    case .reactNative:
+      ReactNativeTab()
     case .post:
       VStack {}
     case .other:
@@ -119,6 +122,8 @@ enum AppTab: Int, Identifiable, Hashable, CaseIterable, Codable {
       "timeline.filter.lists"
     case .links:
       "explore.section.trending.links"
+    case .reactNative:
+      "React Native"
     case .other:
       ""
     }
@@ -158,6 +163,8 @@ enum AppTab: Int, Identifiable, Hashable, CaseIterable, Codable {
       "list.bullet"
     case .links:
       "newspaper"
+    case .reactNative:
+      "reactNative"
     case .other:
       ""
     }
@@ -175,6 +182,7 @@ class SidebarTabs {
   class Storage {
     @AppStorage("sidebar_tabs") var tabs: [SidedebarTab] = [
       .init(tab: .timeline, enabled: true),
+      .init(tab: .reactNative, enabled: true),
       .init(tab: .trending, enabled: true),
       .init(tab: .federated, enabled: true),
       .init(tab: .local, enabled: true),
