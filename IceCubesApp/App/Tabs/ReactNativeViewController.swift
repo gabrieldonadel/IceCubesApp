@@ -29,9 +29,8 @@ class ReactNativeViewController: UIViewController {
 
     reactNativeDelegate = delegate
     reactNativeFactory = factory
-//    bindReactNativeFactory(factory)
 
-    view =  factory.rootViewFactory.view(withModuleName: moduleName)
+    view = factory.rootViewFactory.view(withModuleName: moduleName)
     delegate.setRootView(view, toRootViewController: self)
   }
 }

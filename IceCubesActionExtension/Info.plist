@@ -28,8 +28,8 @@
 			<string>com.apple.services</string>
 			<key>NSExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).ActionRequestHandler</string>
-			<key>RCTNewArchEnabled</key>
-			<true />
 		</dict>
+		<key>RCTNewArchEnabled</key>
+		<true />
 	</dict>
 </plist>

@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2773E6072DA805F5000E6E38 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 2773E6062DA805F5000E6E38 /* RevenueCat */; };
-		33BD9105FEF56B4DBF2F2EAC /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		33BD9105FEF56B4DBF2F2EAC /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		3AB9C4E32A1EB721F0A75D85 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CF17C2F9CBD32570EA12F /* ExpoModulesProvider.swift */; };
 		9F295540292B6C3400E0E81B /* Timeline in Frameworks */ = {isa = PBXBuildFile; productRef = 9F29553F292B6C3400E0E81B /* Timeline */; };
 		9F2A540E2969A0B0009B2D7C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2A540D2969A0B0009B2D7C /* StoreKit.framework */; };
@@ -35,7 +35,7 @@
 		9F7788F02BE78E77004E6BEF /* Timeline in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7788EF2BE78E77004E6BEF /* Timeline */; };
 		9F7D93942980063100EE6B7A /* AppAccount in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7D93932980063100EE6B7A /* AppAccount */; };
 		9F9191592C6DDF20001C89E7 /* WishKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9F9191582C6DDF20001C89E7 /* WishKit */; };
-		9FAD858E29743F7400496AB1 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		9FAD858E29743F7400496AB1 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
 		9FAD859229743F7400496AB1 /* IceCubesShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9FAD858829743F7400496AB1 /* IceCubesShareExtension.appex */; platformFilters = (ios, maccatalyst, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9FAD859A297440CB00496AB1 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9FAD8599297440CB00496AB1 /* KeychainSwift */; };
 		9FAD859C2974422700496AB1 /* AppAccount in Frameworks */ = {isa = PBXBuildFile; productRef = 9FAD859B2974422700496AB1 /* AppAccount */; };
@@ -148,14 +148,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9FF305022CCA8440007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		9FF305022CCA8440007B6B8F /* Exceptions for "IceCubesAppIntents" folder in "IceCubesApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				ListEntity.swift,
 			);
 			target = 9FBFE638292A715500C250E9 /* IceCubesApp */;
 		};
-		9FF305032CCA8440007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		9FF305032CCA8440007B6B8F /* Exceptions for "IceCubesAppIntents" folder in "IceCubesAppWidgetsExtensionExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppAccountEntity.swift,
@@ -164,14 +164,14 @@
 			);
 			target = 9F7788C42BE652B1004E6BEF /* IceCubesAppWidgetsExtensionExtension */;
 		};
-		9FF3054C2CCA8459007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		9FF3054C2CCA8459007B6B8F /* Exceptions for "IceCubesAppWidgetsExtension" folder in "IceCubesAppWidgetsExtensionExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 9F7788C42BE652B1004E6BEF /* IceCubesAppWidgetsExtensionExtension */;
 		};
-		9FF305542CCA8464007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		9FF305542CCA8464007B6B8F /* Exceptions for "IceCubesNotifications" folder in "IceCubesNotifications" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				NotificationService.swift,
@@ -179,28 +179,28 @@
 			);
 			target = 9F2A5415296AB631009B2D7C /* IceCubesNotifications */;
 		};
-		9FF3056D2CCA8515007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		9FF3056D2CCA8515007B6B8F /* Exceptions for "IceCubesActionExtension" folder in "IceCubesActionExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = E9DF41F929830FEC0003AAD2 /* IceCubesActionExtension */;
 		};
-		9FF305732CCA8528007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		9FF305732CCA8528007B6B8F /* Exceptions for "IceCubesShareExtension" folder in "IceCubesShareExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				ShareViewController.swift,
 			);
 			target = 9FAD858729743F7400496AB1 /* IceCubesShareExtension */;
 		};
-		9FF305FB2CCA856A007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		9FF305FB2CCA856A007B6B8F /* Exceptions for "IceCubesApp" folder in "IceCubesApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = 9FBFE638292A715500C250E9 /* IceCubesApp */;
 		};
-		9FF305FC2CCA856A007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		9FF305FC2CCA856A007B6B8F /* Exceptions for "IceCubesApp" folder in "IceCubesNotifications" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Embeds/glass.caf,
@@ -209,7 +209,7 @@
 			);
 			target = 9F2A5415296AB631009B2D7C /* IceCubesNotifications */;
 		};
-		9FF305FD2CCA856A007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		9FF305FD2CCA856A007B6B8F /* Exceptions for "IceCubesApp" folder in "IceCubesShareExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/Localization/Localizable.xcstrings,
@@ -219,13 +219,92 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9FF304F52CCA8440007B6B8F /* IceCubesAppIntents */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9FF305022CCA8440007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 9FF305032CCA8440007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = IceCubesAppIntents; sourceTree = "<group>"; };
-		9FF3053B2CCA8459007B6B8F /* IceCubesAppWidgetsExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9FF3054C2CCA8459007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = IceCubesAppWidgetsExtension; sourceTree = "<group>"; };
-		9FF305512CCA8464007B6B8F /* IceCubesNotifications */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9FF305542CCA8464007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = IceCubesNotifications; sourceTree = "<group>"; };
-		9FF305672CCA8515007B6B8F /* IceCubesActionExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9FF3056D2CCA8515007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = IceCubesActionExtension; sourceTree = "<group>"; };
-		9FF305712CCA8528007B6B8F /* IceCubesShareExtension */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9FF305732CCA8528007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = IceCubesShareExtension; sourceTree = "<group>"; };
-		9FF305C02CCA8569007B6B8F /* IceCubesApp */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (9FF305FB2CCA856A007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 9FF305FC2CCA856A007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 9FF305FD2CCA856A007B6B8F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = IceCubesApp; sourceTree = "<group>"; };
-		E9FB0ACA2E09B13C002D232F /* AlternateIcons */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AlternateIcons; sourceTree = "<group>"; };
+		9FF304F52CCA8440007B6B8F /* IceCubesAppIntents */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9FF305022CCA8440007B6B8F /* Exceptions for "IceCubesAppIntents" folder in "IceCubesApp" target */,
+				9FF305032CCA8440007B6B8F /* Exceptions for "IceCubesAppIntents" folder in "IceCubesAppWidgetsExtensionExtension" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = IceCubesAppIntents;
+			sourceTree = "<group>";
+		};
+		9FF3053B2CCA8459007B6B8F /* IceCubesAppWidgetsExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9FF3054C2CCA8459007B6B8F /* Exceptions for "IceCubesAppWidgetsExtension" folder in "IceCubesAppWidgetsExtensionExtension" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = IceCubesAppWidgetsExtension;
+			sourceTree = "<group>";
+		};
+		9FF305512CCA8464007B6B8F /* IceCubesNotifications */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9FF305542CCA8464007B6B8F /* Exceptions for "IceCubesNotifications" folder in "IceCubesNotifications" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = IceCubesNotifications;
+			sourceTree = "<group>";
+		};
+		9FF305672CCA8515007B6B8F /* IceCubesActionExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9FF3056D2CCA8515007B6B8F /* Exceptions for "IceCubesActionExtension" folder in "IceCubesActionExtension" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = IceCubesActionExtension;
+			sourceTree = "<group>";
+		};
+		9FF305712CCA8528007B6B8F /* IceCubesShareExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9FF305732CCA8528007B6B8F /* Exceptions for "IceCubesShareExtension" folder in "IceCubesShareExtension" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = IceCubesShareExtension;
+			sourceTree = "<group>";
+		};
+		9FF305C02CCA8569007B6B8F /* IceCubesApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9FF305FB2CCA856A007B6B8F /* Exceptions for "IceCubesApp" folder in "IceCubesApp" target */,
+				9FF305FC2CCA856A007B6B8F /* Exceptions for "IceCubesApp" folder in "IceCubesNotifications" target */,
+				9FF305FD2CCA856A007B6B8F /* Exceptions for "IceCubesApp" folder in "IceCubesShareExtension" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = IceCubesApp;
+			sourceTree = "<group>";
+		};
+		E9FB0ACA2E09B13C002D232F /* AlternateIcons */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = AlternateIcons;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,7 +374,7 @@
 				9F295540292B6C3400E0E81B /* Timeline in Frameworks */,
 				9F35DB4A29506FA100B3281A /* Notifications in Frameworks */,
 				9FC2A38B2B49D19A00DFD1C1 /* StatusKit in Frameworks */,
-				33BD9105FEF56B4DBF2F2EAC /* (null) in Frameworks */,
+				33BD9105FEF56B4DBF2F2EAC /* BuildFile in Frameworks */,
 				CC7DD2F5480F592271FBFCDD /* libPods-IceCubesApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,7 +726,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FAD858E29743F7400496AB1 /* (null) in Resources */,
+				9FAD858E29743F7400496AB1 /* BuildFile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,13 +757,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IceCubesApp/Pods-IceCubesApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IceCubesApp/Pods-IceCubesApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -721,13 +796,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IceCubesApp/Pods-IceCubesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IceCubesApp/Pods-IceCubesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1115,7 +1186,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../node_modules/react-native";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1179,7 +1253,10 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../node_modules/react-native";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;

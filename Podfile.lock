@@ -1,9 +1,12 @@
 PODS:
   - boost (1.84.0)
   - DoubleConversion (1.1.6)
-  - EXConstants (18.0.10-canary-20251009-9919e08):
+  - EXConstants (18.0.10-canary-20251015-a6a1272):
     - ExpoModulesCore
-  - Expo (55.0.0-canary-20251009-9919e08):
+  - EXJSONUtils (0.15.1-canary-20251015-a6a1272)
+  - EXManifests (1.0.9-canary-20251015-a6a1272):
+    - ExpoModulesCore
+  - Expo (55.0.0-canary-20251015-a6a1272):
     - boost
     - DoubleConversion
     - ExpoModulesCore
@@ -34,15 +37,222 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - ExpoAsset (12.0.10-canary-20251009-9919e08):
+  - expo-dev-client (6.0.16-canary-20251015-a6a1272):
+    - EXManifests
+    - expo-dev-launcher
+    - expo-dev-menu
+    - expo-dev-menu-interface
+    - EXUpdatesInterface
+  - expo-dev-launcher (6.1.0-canary-20251015-a6a1272):
+    - boost
+    - DoubleConversion
+    - EXManifests
+    - expo-dev-launcher/Main (= 6.1.0-canary-20251015-a6a1272)
+    - expo-dev-menu
+    - expo-dev-menu-interface
     - ExpoModulesCore
-  - ExpoFileSystem (19.0.17-canary-20251009-9919e08):
+    - EXUpdatesInterface
+    - fast_float
+    - fmt
+    - glog
+    - hermes-engine
+    - RCT-Folly
+    - RCT-Folly/Fabric
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-jsinspector
+    - React-NativeModulesApple
+    - React-RCTAppDelegate
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactAppDependencyProvider
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - SocketRocket
+    - Yoga
+  - expo-dev-launcher/Main (6.1.0-canary-20251015-a6a1272):
+    - boost
+    - DoubleConversion
+    - EXManifests
+    - expo-dev-launcher/Unsafe
+    - expo-dev-menu
+    - expo-dev-menu-interface
     - ExpoModulesCore
-  - ExpoFont (14.0.9-canary-20251009-9919e08):
+    - EXUpdatesInterface
+    - fast_float
+    - fmt
+    - glog
+    - hermes-engine
+    - RCT-Folly
+    - RCT-Folly/Fabric
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-jsinspector
+    - React-NativeModulesApple
+    - React-RCTAppDelegate
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactAppDependencyProvider
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - SocketRocket
+    - Yoga
+  - expo-dev-launcher/Unsafe (6.1.0-canary-20251015-a6a1272):
+    - boost
+    - DoubleConversion
+    - EXManifests
+    - expo-dev-menu
+    - expo-dev-menu-interface
     - ExpoModulesCore
-  - ExpoKeepAwake (15.0.8-canary-20251009-9919e08):
+    - EXUpdatesInterface
+    - fast_float
+    - fmt
+    - glog
+    - hermes-engine
+    - RCT-Folly
+    - RCT-Folly/Fabric
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-jsinspector
+    - React-NativeModulesApple
+    - React-RCTAppDelegate
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactAppDependencyProvider
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - SocketRocket
+    - Yoga
+  - expo-dev-menu (7.0.15-canary-20251015-a6a1272):
+    - boost
+    - DoubleConversion
+    - expo-dev-menu/Main (= 7.0.15-canary-20251015-a6a1272)
+    - expo-dev-menu/ReactNativeCompatibles (= 7.0.15-canary-20251015-a6a1272)
+    - fast_float
+    - fmt
+    - glog
+    - hermes-engine
+    - RCT-Folly
+    - RCT-Folly/Fabric
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - SocketRocket
+    - Yoga
+  - expo-dev-menu-interface (2.0.1-canary-20251015-a6a1272)
+  - expo-dev-menu/Main (7.0.15-canary-20251015-a6a1272):
+    - boost
+    - DoubleConversion
+    - EXManifests
+    - expo-dev-menu-interface
     - ExpoModulesCore
-  - ExpoModulesCore (3.1.0-canary-20251009-9919e08):
+    - fast_float
+    - fmt
+    - glog
+    - hermes-engine
+    - RCT-Folly
+    - RCT-Folly/Fabric
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-jsinspector
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - SocketRocket
+    - Yoga
+  - expo-dev-menu/ReactNativeCompatibles (7.0.15-canary-20251015-a6a1272):
+    - boost
+    - DoubleConversion
+    - fast_float
+    - fmt
+    - glog
+    - hermes-engine
+    - RCT-Folly
+    - RCT-Folly/Fabric
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - SocketRocket
+    - Yoga
+  - ExpoAsset (12.0.10-canary-20251015-a6a1272):
+    - ExpoModulesCore
+  - ExpoFileSystem (19.0.18-canary-20251015-a6a1272):
+    - ExpoModulesCore
+  - ExpoFont (14.0.10-canary-20251015-a6a1272):
+    - ExpoModulesCore
+  - ExpoKeepAwake (15.0.8-canary-20251015-a6a1272):
+    - ExpoModulesCore
+  - ExpoModulesCore (3.1.0-canary-20251015-a6a1272):
     - boost
     - DoubleConversion
     - fast_float
@@ -71,6 +281,8 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
+  - EXUpdatesInterface (2.0.1-canary-20251015-a6a1272):
+    - ExpoModulesCore
   - fast_float (8.0.0)
   - FBLazyVector (0.82.0)
   - fmt (11.0.2)
@@ -2398,12 +2610,19 @@ DEPENDENCIES:
   - boost (from `node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXConstants (from `node_modules/expo-constants/ios`)
+  - EXJSONUtils (from `node_modules/expo-json-utils/ios`)
+  - EXManifests (from `node_modules/expo-manifests/ios`)
   - Expo (from `node_modules/expo`)
+  - expo-dev-client (from `node_modules/expo-dev-client/ios`)
+  - expo-dev-launcher (from `node_modules/expo-dev-launcher`)
+  - expo-dev-menu (from `node_modules/expo-dev-menu`)
+  - expo-dev-menu-interface (from `node_modules/expo-dev-menu-interface/ios`)
   - ExpoAsset (from `node_modules/expo-asset/ios`)
   - ExpoFileSystem (from `node_modules/expo-file-system/ios`)
   - ExpoFont (from `node_modules/expo-font/ios`)
   - ExpoKeepAwake (from `node_modules/expo-keep-awake/ios`)
   - ExpoModulesCore (from `node_modules/expo-modules-core`)
+  - EXUpdatesInterface (from `node_modules/expo-updates-interface/ios`)
   - fast_float (from `node_modules/react-native/third-party-podspecs/fast_float.podspec`)
   - FBLazyVector (from `node_modules/react-native/Libraries/FBLazyVector`)
   - fmt (from `node_modules/react-native/third-party-podspecs/fmt.podspec`)
@@ -2489,8 +2708,20 @@ EXTERNAL SOURCES:
     :podspec: node_modules/react-native/third-party-podspecs/DoubleConversion.podspec
   EXConstants:
     :path: node_modules/expo-constants/ios
+  EXJSONUtils:
+    :path: node_modules/expo-json-utils/ios
+  EXManifests:
+    :path: node_modules/expo-manifests/ios
   Expo:
     :path: node_modules/expo
+  expo-dev-client:
+    :path: node_modules/expo-dev-client/ios
+  expo-dev-launcher:
+    :path: node_modules/expo-dev-launcher
+  expo-dev-menu:
+    :path: node_modules/expo-dev-menu
+  expo-dev-menu-interface:
+    :path: node_modules/expo-dev-menu-interface/ios
   ExpoAsset:
     :path: node_modules/expo-asset/ios
   ExpoFileSystem:
@@ -2501,6 +2732,8 @@ EXTERNAL SOURCES:
     :path: node_modules/expo-keep-awake/ios
   ExpoModulesCore:
     :path: node_modules/expo-modules-core
+  EXUpdatesInterface:
+    :path: node_modules/expo-updates-interface/ios
   fast_float:
     :podspec: node_modules/react-native/third-party-podspecs/fast_float.podspec
   FBLazyVector:
@@ -2648,13 +2881,20 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   boost: 7e761d76ca2ce687f7cc98e698152abd03a18f90
   DoubleConversion: cb417026b2400c8f53ae97020b2be961b59470cb
-  EXConstants: 04a55e2f56b5c4648a19fd42595cb7e89cdb61eb
-  Expo: 574d3faaf7e1eeac7ace7c8d10e5e1e7f1bbad42
-  ExpoAsset: 15506a0249efa3bd3cbfc43f1576b99bc9d6d991
-  ExpoFileSystem: 5d85cfbb3d0fe4d1f0f8f44241a43c038b4f6a32
-  ExpoFont: c0bfb9601a97ae5ff3dc5af97a44840cb443c4de
-  ExpoKeepAwake: 624ef544c2221315311936f2921f5059cfd43220
-  ExpoModulesCore: b5096c87f7ba23c54994d5c89a374e5dc20d191b
+  EXConstants: 7589318f04c33ebf3481d1f793e4cd352899cba1
+  EXJSONUtils: 0dcc6f410b23704f4d251c20c7e2dffbf76e4f7a
+  EXManifests: 9c799ad71ad395b474bb7562ee259317a3763060
+  Expo: f56deb20ca1b546adba3e877bf6d083babdad287
+  expo-dev-client: 3bb98d12207f2b6c6beb927a419e448466edb054
+  expo-dev-launcher: 556e3b922df2ce52ec13ca8a777ff9f31a9beea9
+  expo-dev-menu: ede2bff7e1a0965a83f4ecdb65a2ac76fc9c8533
+  expo-dev-menu-interface: 07c1d990dcb0f93d56ff83004cee8807fed388d7
+  ExpoAsset: 9b4b85dffd46691bb0a44268af94e21e0cb41f7b
+  ExpoFileSystem: 3786012ca5ae9de027195be3ebab314d4b6417d8
+  ExpoFont: 0267d85d9065b2fdc2cf1b01a1dad6ba16496f0c
+  ExpoKeepAwake: 8094edaf018c5ff9ca038d1a53a941f5e4622e57
+  ExpoModulesCore: e2f67b836dcefd93c6504c082a95695674501e70
+  EXUpdatesInterface: d22f484d31ec228b9dc792435f2c2d60f93f9dab
   fast_float: b32c788ed9c6a8c584d114d0047beda9664e7cc6
   FBLazyVector: 41b4dd99afd0aad861444ee141abdedaa6c3d238
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
